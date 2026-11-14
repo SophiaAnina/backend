@@ -17,6 +17,7 @@ import { DataSource } from 'typeorm';
       username: 'postgres',
       password: 'Greygang123',
       database: 'nest-example',
+      schema:'nestjs-examples',
       entities: [User],
       synchronize: true,
     }),

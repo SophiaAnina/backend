@@ -15,11 +15,8 @@ export class CreateUserDto {
       minNumbers: 1,
       minSymbols: 1
     })
+
+  @IsNotEmpty()
+  @IsString()
     password:string;
-
-    @IsEnum(["INTERN" , "ENGINEER" , "ADMIN"],{
-        message: 'valid role required'
-  })
-    role: "INTERN" | "ENGINEER" | "ADMIN";
-
 }
